@@ -1,7 +1,7 @@
 #Squid TWRP tree for Moto E 3G (2015)
-Based off https://github.com/cybojenix/android_device_motorola_surnia
-Kernel headers taken from https://github.com/MotorolaMobilityLLC/kernel-msm/tree/lollipop%E2%80%945.0.2-release/include
-Kernel zImage and dt.img taken from stock otus boot.img for 5.0.2
+* Based off https://github.com/cybojenix/android_device_motorola_surnia
+* Kernel headers taken from https://github.com/MotorolaMobilityLLC/kernel-msm/tree/lollipop%E2%80%945.0.2-release/include
+* Kernel zImage and dt.img taken from stock otus boot.img for 5.0.2
 
 ##Dependencies:
 (you probably don't need most of these)
