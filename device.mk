@@ -16,7 +16,3 @@
 
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
-
-PRODUCT_COPY_FILES += \
-    device/motorola/otus/zImage:kernel \
-    device/motorola/otus/dt.img:dt.img

@@ -37,8 +37,10 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 BOARD_KERNEL_BASE := 0x0
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --dt device/motorola/otus/dt.img --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_PREBUILT_KERNEL := device/motorola/otus/zImage
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
+TARGET_KERNEL_SOURCE := kernel/motorola/msm8916
+TARGET_KERNEL_CONFIG := msm8610-mini_defconfig
 
 BOARD_USES_QCOM_HARDWARE := true
 
@@ -54,7 +56,6 @@ DEVICE_RESOLUTION := 540x960
 TW_TARGET_USES_QCOM_BSP := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_INCLUDE_CRYPTO := true
-TARGET_CUSTOM_KERNEL_HEADERS := device/motorola/otus/kernel_headers
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_IGNORE_MAJOR_AXIS_0 := true
 
