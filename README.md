@@ -14,7 +14,19 @@ mkdir ~/omni-twrp-tree
 cd ~/omni-twrp-tree
 repo init -u https://github.com/sultanqasim/twrp_recovery_manifest.git -b android-5.1
 mkdir -p .repo/local_manifests
-wget https://raw.githubusercontent.com/sultanqasim/twrp_recovery_manifest/android-5.1/styx.xml -O .repo/local_manifests/styx.xml
+````
+
+Create a file .repo/local_manifests/otus.xml and paste this in
+````
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <project name="sultanqasim/android_device_motorola_otus" path="device/motorola/otus" remote="github" revision="twrp" />
+    <project name="sultanqasim/android_kernel_motorola_otus" path="kernel/motorola/msm8610" remote="github" revision="twrp" />
+</manifest>
+````
+
+Now fetch the code
+````
 repo sync
 ````
 
@@ -26,4 +38,3 @@ make clean
 make installclean
 make -j10 recoveryimage
 ````
-Replace omni_otus-userdebug with omni_surnia-userdebug if you want to build a surnia recovery instead.
