@@ -64,6 +64,17 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.mot.build.customerid", "retusa_glb");
         property_set("ro.telephony.default_network", "0");
         property_set("persist.radio.multisim.config", "");
+    } else if (ISMATCH(radio, "0x5")) {
+        /* xt1506 */
+        property_set("ro.product.device", "otus_ds");
+        property_set("ro.build.product", "otus_ds");
+        property_set("ro.build.description", "otus_reteu_ds-user 5.0.2 LXC22.99-13 11 release-keys");
+        property_set("ro.build.fingerprint", "[motorola/otus_reteu_ds/otus_ds:5.0.2/LXC22.99-13/11:user/release-keys");
+        property_set("ro.mot.build.customerid", "reteuall");
+        property_set("ro.telephony.default_network", "3");
+        property_set("persist.radio.multisim.config", "dsds");
+        property_set("persist.radio.dont_use_dsd", "true");
+        property_set("persist.radio.plmn_name_cmp", "1");
     }
     else if (ISMATCH(radio, "0x5")) {
         /* xt1506 */
