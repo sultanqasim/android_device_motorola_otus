@@ -30,6 +30,16 @@ Now fetch the code
 repo sync
 ````
 
+The Motorola blobs for encryption also need some special logging functions that are
+available in CyanogenMod.
+````
+cd system/core
+git remote add cm git@github.com:CyanogenMod/android_system_core.git
+git fetch cm cm-12.1
+git cherry-pick 67d7a80c3d07c8bee577dec92d3cea658f34899c
+````
+
+
 ##Building:
 ````
 source build/envsetup.sh
