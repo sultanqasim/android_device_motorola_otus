@@ -88,7 +88,5 @@ PRODUCT_COPY_FILES += \
     kernel/motorola/otus/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     kernel/motorola/otus/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini
 
-# Inhert dalvik heap values from aosp
-$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-
-$(call inherit-product-if-exists, hardware/qcom/msm8x74/msm8x74.mk)
+# Inherit from msm8610-common
+$(call inherit-product, device/motorola/msm8610-common/msm8610.mk)

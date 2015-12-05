@@ -16,6 +16,9 @@
 
 -include vendor/motorola/otus/BoardConfigVendor.mk
 
+# inherit from common msm8610-common
+-include device/motorola/msm8610-common/BoardConfigCommon.mk
+
 LOCAL_PATH := device/motorola/otus
 
 TARGET_KERNEL_SOURCE := kernel/motorola/otus
