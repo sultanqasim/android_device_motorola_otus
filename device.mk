@@ -21,8 +21,6 @@
 
 LOCAL_PATH := device/motorola/otus
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
 # Ramdisk
  PRODUCT_COPY_FILES += \
      $(call find-copy-subdir-files,*,${LOCAL_PATH}/ramdisk,root)
@@ -31,25 +29,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 PRODUCT_COPY_FILES += \
      $(call find-copy-subdir-files,*,${LOCAL_PATH}/prebuilt/system,system)
 
-# Motorola
-PRODUCT_PACKAGES += \
-    libmoto
-
 # Audio configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
-
-# Camera
-PRODUCT_PACKAGES += \
-    camera.msm8610 \
-    libmm-qcamera \
-    libboringssl-compat \
-    libshim_qcopt
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=240
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.mdpcomp.enable=true
