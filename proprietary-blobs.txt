@@ -112,7 +112,6 @@ bin/xtwifi-client
 bin/xtwifi-inet-agent
 lib/libactions_irservice_stm.so
 lib/libadropbox.so
-lib/libcnefeatureconfig.so
 lib/libdmengine.so
 lib/libdrmdecrypt.so
 lib/libGLESv3.so
