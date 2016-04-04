@@ -21,7 +21,7 @@ Create a file .repo/local_manifests/otus.xml and paste this in
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <project name="sultanqasim/android_device_motorola_otus" path="device/motorola/otus" remote="github" revision="twrp" />
-    <project name="sultanqasim/android_kernel_motorola_otus" path="kernel/motorola/msm8610" remote="github" revision="twrp" />
+    <project name="CyanogenMod/android_kernel_motorola_msm8610" path="kernel/motorola/msm8610" remote="github" revision="cm-13.0" />
 </manifest>
 ````
 

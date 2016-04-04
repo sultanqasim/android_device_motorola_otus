@@ -1,8 +1,8 @@
 [
   {
     "remote":      "github",
-    "repository":  "sultanqasim/android_kernel_motorola_otus",
+    "repository":  "CyanogenMod/android_kernel_motorola_msm8610",
     "target_path": "kernel/motorola/msm8610",
-    "revision":    "twrp"
+    "revision":    "cm-13.0"
   }
 ]
