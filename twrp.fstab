@@ -5,5 +5,6 @@
 /recovery     emmc          /dev/block/platform/msm_sdcc.1/by-name/recovery
 /persist      ext4          /dev/block/platform/msm_sdcc.1/by-name/persist    flags=fsflags=ro,nosuid,nodev,barrier=0;mounttodecrypt
 /firmware     ext4          /dev/block/platform/msm_sdcc.1/by-name/modem      flags=fsflags=ro,nosuid,nodev,barrier=0;mounttodecrypt
+/misc         emmc          /dev/block/platform/msm_sdcc.1/by-name/misc
 /external_sd  auto          /dev/block/mmcblk1p1  /dev/block/mmcblk1          flags=display="MicroSD Card";storage;wipeingui;removable
 /usb_otg      auto          /devices/platform/msm_hsusb                       flags=display="USB-OTG";storage;wipeingui;removable
